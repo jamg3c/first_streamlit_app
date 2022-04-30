@@ -1,3 +1,3 @@
-streamlit.title('Breakfast Favorites')
+
 
 
