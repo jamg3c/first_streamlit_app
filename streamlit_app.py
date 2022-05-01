@@ -30,6 +30,7 @@ streamlit.text("Hello from Snowflake:")
 streamlit.text(my_data_row)
 
 
-fruit_choice = streamlit.text_input('Que fruta desea añadir?','kiwi')
-streamlit.write('The user entered',fruit_choice)
+add_fruit = streamlit.text_input('Que fruta desea añadir?','kiwi')
+streamlit.write('Thanks for add ',add_fruit)
+my_cur.execute("insert into PC_RIVERY_DB.PUBLIC.FRUIT_LOAD_LIST VALUES('from streamlit');")
 
